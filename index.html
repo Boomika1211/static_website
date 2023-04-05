@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        } 
+        body{
+            background-image: url(img1.jpg);
+            background-size: cover;
+        }
+        input{
+            width:230px;
+            height:40px;
+            margin:20px;
+            margin-left:60px;
+            border:none;
+            outline:none;
+            background-color:transparent;
+            border-bottom:2px solid rgb(0, 0, 0);
+            background-color:none;
+            color:rgb(0, 0, 0);
+            font-family:sans-serif;
+        }
+        #i1{
+            margin-top:35px;
+        }
+        #div1{
+            
+            background-color: rgb(30, 109, 220);
+            height:100px;
+            border:none;
+        }
+       #div1 p{
+            font-style: italic;
+            position: absolute;
+            top:60px;
+            left:60px;
+            color:white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #v1{
+            color:rgb(255, 255, 255);
+            position: absolute;
+            top:20px;
+            left:55px;
+            font-family:sans-serif;
+            font-size: 40px;
+            
+        }
+        #div2{
+            color:rgb(0, 0, 0);
+            border:none;
+            position: absolute;
+            top:220px;
+            left:800px;
+           width:360px;
+           height:360px;
+          border:none;
+          /* border-radius:20px;
+           box-shadow:0px 0px 15px rgb(192, 190, 190);
+           box-sizing:border-box;*/
+           justify-content: center;
+           display: flex;
+           flex-direction: column; 
+           background-color:rgb(255, 255, 255);
+        }
+        #s1{
+            border-radius:10px;
+            border:none;
+            box-shadow:0 0 5px gray;
+            background-color:rgb(30, 109, 220);
+            color:whitesmoke;
+        }
+        #s1:hover{
+            background-color:rgb(143, 86, 255);
+        }
+        label{
+            color:rgb(10, 10, 10);
+            
+            
+            margin-left:60px;
+            position: relative;
+            top:5px;
+            font-family: sans-serif;
+        }
+        #l1{
+            position: absolute;
+            top:40px;
+            
+        }
+       
+        #bot{
+            position: absolute;
+            font-size:60px;
+            top:20px;
+            padding-left:1350px;
+        }
+        button{
+            font-size:15px;
+            width:80px;
+            height:30px;
+            
+            border:none;
+            background-color:transparent;
+            color:white;
+        }
+        button:hover{
+             box-shadow:0px 0px 10px rgb(22, 22, 162);
+        }
+      #div3{
+        position: absolute;
+        padding-left: 200px;
+        padding-top: 200px;
+      }
+       
+    </style>
+</head>
+<body>
+   <div id="div1">
+    
+    <h3 id="v1">MEDIX</h3>
+        <br>
+        <p>Book your slot </p>
+        <div id="bot">
+            <a href=""><button>Register</button></a>
+            <a href=""><button>Signin</button></a>
+            </div>
+       
+   </div> 
+   <div id="div3">
+    <h1>Choose your slot when you have time</h1>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, repellendus!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, repellendus!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, repellendus!</p>
+   </div>
+    <div id="div2">
+        <form action="details.html">
+        <label for="" id="l1">Search for doctor</label>
+        <input type="text" list="sub" id="i1">
+        <datalist  id="sub">
+            <option value="Cardiac">
+            <option value="General">
+            <option value="Neurology">
+            <option value="Nephrology">
+            <option value="------">
+        </datalist>
+        <br>
+        <label for=""id="">Choose your location</label>
+        <input type="text" list="sub1" id="i2">
+        <datalist  id="sub1">
+            <option value="Chennai">
+            <option value="Bangalore">
+            
+        </datalist>
+      <input type="submit" value="Search" id="s1">
+    </form>
+    </div>
+   
+</body>
+</html>
